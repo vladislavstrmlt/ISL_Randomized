@@ -105,7 +105,7 @@ class ProblemSet:
         #         subprocess.run(["sudo", "apt-get", "install", "-y", "texlive"], check=True)
         #     else:
         #         raise NotImplementedError("pdflatex is not installed and the system is not recognized as Linux. Please install pdflatex manually, or implement it here.")
-        subprocess.run(["pdflatex_custom", "-output-directory=output/", "-interaction=nonstopmode", f"output/{output_filename}.tex"])
+        subprocess.run(["pdftex_custom/pdftex_custom", "-output-directory=output/", "-interaction=nonstopmode", f"output/{output_filename}.tex"])
 
         if remove_crap:
             for filename in os.listdir("output/"):

@@ -4,7 +4,6 @@ Streamlit app
 import streamlit as st
 from problems import ISL2020_NO_G
 
-
 PROBLEMS = ISL2020_NO_G
 
 
@@ -35,9 +34,4 @@ def main():
 
 
 if __name__ == "__main__":
-    # main()
-    # os.environ["PATH"] = os.popen('echo $PATH').read().strip()
-
-    # Print if pdflatex is installed
-    import shutil
-    st.write(shutil.which("pdflatex_custom"))
+    main()

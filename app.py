@@ -40,4 +40,4 @@ if __name__ == "__main__":
 
     # Print if pdflatex is installed
     import shutil
-    print(shutil.which("pdflatex"))
+    st.write(shutil.which("pdflatex"))

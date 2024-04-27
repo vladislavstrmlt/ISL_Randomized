@@ -36,16 +36,8 @@ def main():
 
 if __name__ == "__main__":
     # main()
-    try:
-        subprocess.run(["sudo", "apt-get", "install", "-y", "texlive"], check=True, capture_output=True)
-    except subprocess.CalledProcessError as e:
-        st.write(f"Installation failed with error:\n{e.cmd}\n{e.returncode}\n{e.stdout}\n{e.stderr}\n{e.output}")
-    import shutil
-    import subprocess
-    import os
-    st.write(shutil.which("pdflatex"))
-    st.write(shutil.which("texlive"))
     # os.environ["PATH"] = os.popen('echo $PATH').read().strip()
 
-    st.write(shutil.which("pdflatex"))
-    st.write(shutil.which("texlive"))
+    # Print if pdflatex is installed
+    import shutil
+    print(shutil.which("pdflatex"))

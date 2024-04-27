@@ -15,7 +15,7 @@ def main():
     topics = st.multiselect("Select topics", ["A", "C", "G", "N"], default=["A", "C", "G", "N"])
     include_unlabelled = st.checkbox("Include unlabelled problems")
     sources = st.checkbox("Show sources")
-    num_problems = st.number_input("Number of problems", min_value=1, max_value=len(PROBLEMS), value=6)
+    num_problems = st.number_input("Number of problems", min_value=1, max_value=len(PROBLEMS), value=5)
 
     if st.button("Generate PDF"):
         PROBLEMS.to_pdf(

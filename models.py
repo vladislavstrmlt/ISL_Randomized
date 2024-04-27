@@ -26,6 +26,9 @@ class ProblemSet:
     def __iadd__(self, other: ProblemSet) -> None:
         self.problems.extend(other.problems)
 
+    def __len__(self) -> int:
+        return len(self.problems)
+
     def to_pdf(
         self,
         topics: Iterable[Literal["A", "C", "G", "N"]] = ("A", "C", "G", "N"),
@@ -98,6 +101,6 @@ class ProblemSet:
 
         if remove_crap:
             for filename in os.listdir("output/"):
-                if not filename.endswith(".pdf"):
+                if not filename.endswith((".pdf", ".txt")):
                     os.remove(f"output/{filename}")
 

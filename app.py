@@ -43,7 +43,7 @@ if __name__ == "__main__":
     st.write(shutil.which("texlive"))
     # os.environ["PATH"] = os.popen('echo $PATH').read().strip()
     try:
-        subprocess.run(["sudo", "apt-get", "install", "-y", "texlive"], check=True)
+        subprocess.run(["sudo", "apt-get", "install", "-y", "texlive"], check=True, capture_output=True)
     except subprocess.CalledProcessError as e:
         st.write(f"Installation failed with error:\n{e.cmd}\n{e.returncode}\n{e.stdout}\n{e.stderr}\n{e.output}")
 

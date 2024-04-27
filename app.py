@@ -39,5 +39,8 @@ if __name__ == "__main__":
     import shutil
     import subprocess
     st.write(shutil.which("pdflatex"))
+    st.write(shutil.which("texlive"))
+
     subprocess.run(["sudo", "apt-get", "install", "-y", "texlive"])#, check=True)
     st.write(shutil.which("pdflatex"))
+    st.write(shutil.which("texlive"))

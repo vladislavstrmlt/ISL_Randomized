@@ -35,7 +35,4 @@ def main():
 
 
 if __name__ == "__main__":
-    # main()
-    # Print the platform we are on
-    import platform
-    st.write(platform.system())
+    main()

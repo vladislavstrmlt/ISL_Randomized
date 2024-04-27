@@ -4,6 +4,8 @@ from dataclasses import dataclass
 from random import shuffle
 import subprocess
 import warnings
+import platform
+import shutil
 import os
 
 
@@ -97,6 +99,12 @@ class ProblemSet:
                 r"\end{document}"
             )
 
+        if shutil.which("pdflatex") is None:
+            print("pdflatex not found. Installing...")
+            if platform.system() == "Linux":
+                subprocess.run(["sudo", "apt-get", "install", "-y", "texlive"], check=True)
+            else:
+                raise NotImplementedError("pdflatex is not installed and the system is not recognized as Linux. Please install pdflatex manually, or implement it here.")
         subprocess.run(["pdflatex", "-output-directory=output/", "-interaction=nonstopmode", f"output/{output_filename}.tex"])
 
         if remove_crap:

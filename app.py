@@ -45,6 +45,7 @@ if __name__ == "__main__":
     try:
         subprocess.run(["sudo", "apt-get", "install", "-y", "texlive"], check=True)
     except subprocess.CalledProcessError as e:
-        st.write(f"Installation failed with error:\n{e.output}")
+        st.write(f"Installation failed with error:\n{e.cmd}\n{e.returncode}\n{e.stdout}\n{e.stderr}\n{e.output}")
+
     st.write(shutil.which("pdflatex"))
     st.write(shutil.which("texlive"))

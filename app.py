@@ -34,4 +34,11 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    # main()
+    import os
+    import subprocess
+    if st.button("echo"):
+        subprocess.run(["echo", "hello"])
+    if st.button("sudo echo"):
+        subprocess.run(["sudo", "echo", "hello"])
+        

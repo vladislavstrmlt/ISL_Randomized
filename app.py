@@ -38,6 +38,12 @@ if __name__ == "__main__":
     import os
     import subprocess
     if st.button("echo"):
-        subprocess.run(["echo", "hello"], check=True)
+        try:
+            subprocess.run(["echo", "hello"], check=True)
+        except subprocess.CalledProcessError as e:
+            st.write(e.stderr)
     if st.button("sudo echo"):
-        subprocess.run(["sudo", "echo", "hello"], check=True)
+        try:
+            subprocess.run(["sudo", "echo", "hello"], check=True)
+        except subprocess.CalledProcessError as e:
+            st.write(e.stderr)

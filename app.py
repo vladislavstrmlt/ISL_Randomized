@@ -35,4 +35,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    # main()
+    import shutil
+    import subprocess
+    st.write(shutil.which("pdflatex"))

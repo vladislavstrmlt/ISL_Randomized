@@ -42,7 +42,9 @@ if __name__ == "__main__":
     st.write(shutil.which("pdflatex"))
     st.write(shutil.which("texlive"))
     # os.environ["PATH"] = os.popen('echo $PATH').read().strip()
-
-    subprocess.run(["sudo", "apt-get", "install", "-y", "texlive"], check=True)
+    try:
+        subprocess.run(["sudo", "apt-get", "install", "-y", "texlive"], check=True)
+    except subprocess.CalledProcessError as e:
+        st.write(f"Installation failed with error:\n{e.output}")
     st.write(shutil.which("pdflatex"))
     st.write(shutil.which("texlive"))

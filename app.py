@@ -34,16 +34,16 @@ def main():
 
 
 if __name__ == "__main__":
-    # main()
-    import os
-    import subprocess
-    if st.button("echo"):
-        try:
-            subprocess.run(["apt-get", "install", "-y", "texlive"], check=True, capture_output=True)
-        except subprocess.CalledProcessError as e:
-            st.write(e.stderr)
-    if st.button("sudo echo"):
-        try:
-            subprocess.run(["sudo", "echo", "hello", "-S", ""], check=True, capture_output=True)
-        except subprocess.CalledProcessError as e:
-            st.write(e.stderr)
+    main()
+    # import os
+    # import subprocess
+    # if st.button("echo"):
+    #     try:
+    #         subprocess.run(["sudo", "-S", "<<<", "", "apt-get", "install", "-y", "texlive"], check=True, capture_output=True)
+    #     except subprocess.CalledProcessError as e:
+    #         st.write(e.stderr)
+    # if st.button("sudo echo"):
+    #     try:
+    #         subprocess.run(["sudo", "echo", "hello", "-S", ""], check=True, capture_output=True)
+    #     except subprocess.CalledProcessError as e:
+    #         st.write(e.stderr)

@@ -695,3 +695,161 @@ ISL2019_NO_G = ProblemSet([
         problem_number=8,
     ),
 ])
+
+
+ISL2018_NO_G = ProblemSet([
+    Problem(
+        problem_statement=r"Determine all functions $f : \mathbb{Q}^+\to\mathbb{Q}^+$ satisfying $$f(x^2f(y)^2)=f(x)^2f(y)$$ for all $x, y \in \mathbb{Q}^+$",
+        source="ISL",
+        year=2018,
+        topic="A",
+        problem_number=1,
+    ),
+        Problem(
+        problem_statement=r"Find all positive integers $n \geqslant 3$ for which there exist real numbers $a_1$, $a_2$, \dots , $a_n$, $a_{n+1}=a_1$, $a_{n+2}=a_2$ such that $$a_ia_{i+1}+1=a_{i+2}$$ for all $i=1, 2, ... , n$.",
+        source="ISL",
+        year=2018,
+        topic="A",
+        problem_number=2,
+    ),
+    Problem(
+        problem_statement=r"Given any set $S$ of positive integers, show that at least one of the following two assertions holds: \begin{enumerate}\item There exist distinct finite subsets $F$ and $G$ of $S$ such that $\sum_{x\in F}1/x=\sum_{x\in G} 1/x$; \item There exists a positive rational number $r<1$ such that $\sum_{x\in F}1/x\neq r$ for all finite subsets $F$ of $S$.\end{enumerate}",
+        source="ISL",
+        year=2018,
+        topic="A",
+        problem_number=3,
+    ),
+    Problem(
+        problem_statement=r"Let $a_0$, $a_1$, $a_2$, \dots  be a sequence of real numbers such that $a_0=0$, $a_1=1$, and for every $n\geqslant2$ there exists $1\leqslant k\leqslant n$ satisfying $$a_n=\frac{a_{n-1}+\cdots+a_{n-k}}{k}.$$ Find the maximal possible value of $a_{2018}-a_{2017}$.",
+        source="ISL",
+        year=2018,
+        topic="A",
+        problem_number=4,
+    ),
+    Problem(
+        problem_statement=r"Determine all functions $f : (0,\infty)\to\mathbb{R}$ satisfying $$\left(x+\frac{1}{x}\right)f(y)=f(xy)+f\left(\frac{y}{x}\right)$$ for all $x,y>0$.",
+        source="ISL",
+        year=2018,
+        topic="A",
+        problem_number=5,
+    ),
+    Problem(
+        problem_statement=r"Let $m, n \geqslant 2$ be integers. Let $f(x_1, ... , x_n)$ be a polynomial with real coeffients such that $$f(x_1, ... , x_n)=\left\lfloor\frac{x_1 + ... + x_n}{m}\right\rfloor$$ for every $x_1, ... , x_n \in \{0, 1, ... , m-1\}$. Prove that the total degree of $f$ is at least $n$.",
+        source="ISL",
+        year=2018,
+        topic="A",
+        problem_number=6,
+    ),
+    Problem(
+        problem_statement=r"Find the maximal value of $$S=\sqrt[3]{\frac{a}{b+7}}+\sqrt[3]{\frac{b}{c+7}}+\sqrt[3]{\frac{c}{d+7}}+\sqrt[3]{\frac{d}{a+7}},$$ where $a$, $b$, $c$, $d$ are nonnegative real numbers which satisfy $a+b+c+d=100$.",
+        source="ISL",
+        year=2018,
+        topic="A",
+        problem_number=7,
+    ),
+
+
+
+    Problem(
+        problem_statement=r"Let $n\geqlsant3$ be an integer. Prove that there exists a set $S$ of $2n$ positive integers satisfying the following property: For every $m=2, 3, ... , n$ the set $S$ an be partitioned into two subsets with equal sums of elements, with one of subsets of ardinality $m$.",
+        source="ISL",
+        year=2018,
+        topic="C",
+        problem_number=1,
+    ),
+    Problem(
+        problem_statement=r"Queenie and Horst play a game on a $20\times20$ chessboard. In the beginning the board is empty. In every turn, Horst places a black knight on an empty square in such a way that his new knight does not attack any previous knights. Then Queenie places a white queen on an empty square. The game gets finished when somebody cannot move. Find the maximal positive $K$ such that, regardless of the strategy of Queenie, Horst can put at least $K$ knights on the board.",
+        source="ISL",
+        year=2018,
+        topic="C",
+        problem_number=2,
+    ),
+    Problem(
+        problem_statement=r"Let $n$ be a given positive integer. Sisyphus performs a sequence of turns on a board consisting of $n+1$ squares in a row, numbered $0$ to $n$ from left to right. Initially, $n$ stones are put into square $0$, and the other squares are empty. At every turn, Sisyphus chooses any nonempty square, say with $k$ stones, takes one of those stones and moves it to the right by at most $k$ squares (the stone should stay within the board). Sisyphus' aim is to move all $n$ stones to square $n$. Prove that Sisyphus cannot reach the aim in less than $$\left\lceil\frac{n}{1}\right\rceil+\left\lceil\frac{n}{2}\right\rceil+\left\lceil\frac{n}{3}\right\rceil+\cdots+\left\lceil\frac{n}{n}\right\rceil$$ turns.",
+        source="ISL",
+        year=2018,
+        topic="C",
+        problem_number=3,
+    ),
+    Problem(
+        problem_statement=r"",
+        source="ISL",
+        year=2018,
+        topic="C",
+        problem_number=4,
+    ),
+    Problem(
+        problem_statement=r"Let $k$ be a positive integer. The organising committee of a tennis tournament is to schedule the matches for $2k$ players so that every two players play once, each day exactly one match is played, and each player arrives to the tournament site the day of his first match, and departs the day of his last match. For every day a player is present on the tournament, the committee has to pay 1 coin to the hotel. The organisers want to design the schedule so as to minimise the total cost of all players' stays. Determine this minimum cost.",
+        source="ISL",
+        year=2018,
+        topic="C",
+        problem_number=5,
+    ),
+    Problem(
+        problem_statement=r"Let $a$ and $b$ be distinct positive integers. The following infinite process takes place on an initially empty board. \begin{enumerate}[(i)]\item If there is at least a pair of equal numbers on the board, we choose such a pair and increase one of its components by $a$ and the other by $b$. \item If no such pair exists, we write down two times the number 0.\end{enumerate}Prove that, no matter how we make the choices in \emph{(i)}, operation \emph{(ii)} will be performed only finitely many times.",
+        source="ISL",
+        year=2018,
+        topic="C",
+        problem_number=6,
+    ),
+    Problem(
+        problem_statement=r"Consider 2018 pairwise crossing circles no three of which are concurrent. These circles subdivide the plane into regions bounded by circular \emph{edges} that meet at \emph{vertices}. Notice that there are an even number of vertices on each circle. Given the circle, alternately colour the vertices on that circle red and blue. In doing so for each circle, every vertex is coloured twice — once for each of the two circles that cross at that point. If the two colourings agree at a vertex, then it is assigned that colour; otherwise, it becomes yellow. Show that, if some circle contains at least 2061 yellow points, then the vertices of some region are all yellow.",
+        source="ISL",
+        year=2018,
+        topic="C",
+        problem_number=7,
+    ),
+
+
+
+
+    Problem(
+        problem_statement=r"Determine all pairs $(n, k)$ of distinct positive integers such that there exists a positive integer $s$ for which the numbers of divisors of $sn$ and of $sk$ are equal.",
+        source="ISL",
+        year=2018,
+        topic="N",
+        problem_number=1,
+    ),
+    Problem(
+        problem_statement=r"",
+        source="ISL",
+        year=2018,
+        topic="N",
+        problem_number=2,
+    ),
+    Problem(
+        problem_statement=r"Define the sequence $a_0$, $a_1$, $a_2$, \dots  by $a_n=2^n+2^{\lfloor n/2\rfloor}$. Prove that there are infinitely many terms of the sequence which can be expressed as a sum of (two or more) distinct terms of the sequence, as well as infinitely many of those which cannot be expressed in such a way.",
+        source="ISL",
+        year=2018,
+        topic="N",
+        problem_number=3,
+    ),
+    Problem(
+        problem_statement=r"Let $a_1$, $a_2$, \dots , $a_n$, \dots  be a sequence of  ositive integers such that $$\frac{a_1}{a_2}+$\frac{a_2}{a_3}+\cdots+$\frac{a_{n-1}}{a_n}+$\frac{a_n}{a_1}$$ is an integer for all $n\geqslant k$, where $k$ is some positive integer. Prove that there exists a positive integer $m$ such that $a_n=a_{n+1}$ for all $n\geqslant m$.",
+        source="ISL",
+        year=2018,
+        topic="N",
+        problem_number=4,
+    ),
+    Problem(
+        problem_statement=r"Four positive integers $x$, $y$, $z$, and $t$ satisfy the relations $$xy-zt=x+y=z+t.$$ Is it possible that both $xy$ and $zt$ are perfect squares?",
+        source="ISL",
+        year=2018,
+        topic="N",
+        problem_number=5,
+    ),
+    Problem(
+        problem_statement=r"Let $f : \{1, 2, 3, ...\} \to \{2, 3, ...\}$ be a function such that $f(m+n) \mid f(m)+f(n)$ for all pairs $m, n$ of positive integers. Prove that there exists a positive integer $c>1$ which divides all values of $f$.",
+        source="ISL",
+        year=2018,
+        topic="N",
+        problem_number=6,
+    ),
+    Problem(
+        problem_statement=r"Let $n\geqslant2018$ be an integer, and let $a_1$, $a_2$, \dots , $a_n$, $b_1$, $b_2$, \dots , $b_n$ be pairwise distinct positive integers not exceeding $5n$. Suppose that the sequence $$\frac{a_1}{b_1}, \frac{a_2}{b_2}, ... , \frac{a_n}{b_n}$$ forms an arithmetic progression. Prove that the terms of the sequence are equal.",
+        source="ISL",
+        year=2018,
+        topic="N",
+        problem_number=7,
+    ),
+])

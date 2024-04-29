@@ -55,7 +55,7 @@ ISL2022_NO_G = ProblemSet([
         problem_number=7,
     ),
     Problem(
-        problem_statement=r"For a positive integer $n$, an $n$-sequence is a sequence $(a_0,...,a_n)$ of non-negative integers satisfying the following condition: if $i$ and $j$ are non-negative integers with $i+j\leqslant n$, then $a_i+a_j\leqslant n$ and $a_{a_i+a_j}=a_{i+j}$. Let $f(n)$ be the number of $n$-sequences. Prove that there exist positive real numbers $c_1$, $c_2$ and $\lambda$ such that $$c_1\lambda^n<f(n)<c_2\lambda^n$$ for all positive integers $n$.",
+        problem_statement=r"For a positive integer $n$, an $n$-sequence is a sequence $(a_0,\dots,a_n)$ of non-negative integers satisfying the following condition: if $i$ and $j$ are non-negative integers with $i+j\leqslant n$, then $a_i+a_j\leqslant n$ and $a_{a_i+a_j}=a_{i+j}$. Let $f(n)$ be the number of $n$-sequences. Prove that there exist positive real numbers $c_1$, $c_2$ and $\lambda$ such that $$c_1\lambda^n<f(n)<c_2\lambda^n$$ for all positive integers $n$.",
         source="ISL",
         year=2022,
         topic="A",
@@ -90,7 +90,7 @@ ISL2022_NO_G = ProblemSet([
         problem_number=4,
     ),
     Problem(
-        problem_statement=r"Let $m,n\geqslant2$ be integers, let $X$ be a set with $n$ elements, and let $X_1$, $X_2$, \dots, $X_m$ be pairwise distinct non-empty, not necessarily disjoint subsets of $X$. A function $f:X\to\{1,2,...,n+1\}$ is called \emph{nice} if there exists an index $k$ such that $$\sum_{x\in X_k}f(x)>\sum_{x\in X_i}f(x)$$ for all $i\neq k$. Prove that the number of nice functions is at least $n^n$.",
+        problem_statement=r"Let $m,n\geqslant2$ be integers, let $X$ be a set with $n$ elements, and let $X_1$, $X_2$, \dots, $X_m$ be pairwise distinct non-empty, not necessarily disjoint subsets of $X$. A function $f:X\to\{1,2,\dots,n+1\}$ is called \emph{nice} if there exists an index $k$ such that $$\sum_{x\in X_k}f(x)>\sum_{x\in X_i}f(x)$$ for all $i\neq k$. Prove that the number of nice functions is at least $n^n$.",
         source="ISL",
         year=2022,
         topic="C",
@@ -104,7 +104,7 @@ ISL2022_NO_G = ProblemSet([
         problem_number=6,
     ),
     Problem(
-        problem_statement=r"Lucy starts by writing $s$ integer-valued 2022-tuples on a blackboard. After doing that, she can take any two (not necessarily distinct) tuples $\mathbf{v}=(v_1,...,v_{2022})$ and $\mathbf{w}=(w_1,...,w_{2022})$ that she has already written, and apply one of the following operations to obtain a new tuple: \begin{align*}\mathbf{v}+\mathbf{w} &= (v_1+w_1,...,v_{2022}+w_{2022}) \\ \mathbf{v}\circ\mathbf{w} &= (\max(v_1,w_1),...,\max(v_{2022},w_{2022}))\end{align*} and then write this tuple on the blackboard. \\ It turns out that, in this way, Lucy can write any integer-valued 2022-tuple on the blackboard after finitely many steps. What is the smallest possible number $s$ of tuples that she initially wrote?",
+        problem_statement=r"Lucy starts by writing $s$ integer-valued 2022-tuples on a blackboard. After doing that, she can take any two (not necessarily distinct) tuples $\mathbf{v}=(v_1,\dots,v_{2022})$ and $\mathbf{w}=(w_1,\dots,w_{2022})$ that she has already written, and apply one of the following operations to obtain a new tuple: \begin{align*}\mathbf{v}+\mathbf{w} &= (v_1+w_1,\dots,v_{2022}+w_{2022}) \\ \mathbf{v}\circ\mathbf{w} &= (\max(v_1,w_1),\dots,\max(v_{2022},w_{2022}))\end{align*} and then write this tuple on the blackboard. \\ It turns out that, in this way, Lucy can write any integer-valued 2022-tuple on the blackboard after finitely many steps. What is the smallest possible number $s$ of tuples that she initially wrote?",
         source="ISL",
         year=2022,
         topic="C",
@@ -192,7 +192,7 @@ ISL2021_NO_G = ProblemSet([
         problem_number=1,
     ),
     Problem(
-        problem_statement=r"Let $n\geqslant 3$ be an integer. An integer $m \geqslant n + 1$ is called $n$-colourful if, given infinitely many marbles in each of $n$ colours $C_1$, $C_2$, \dots, $C_n$, it is possible to place $m$ of them around a circle so that in any group of $n + 1$ consecutive marbles there is at least one marble of colour $C_i$ for each $i=1,..., n$. Prove that there are only finitely many positive integers which are not $n$-colourful. Find the largest among them.",
+        problem_statement=r"Let $n\geqslant 3$ be an integer. An integer $m \geqslant n + 1$ is called $n$-colourful if, given infinitely many marbles in each of $n$ colours $C_1$, $C_2$, \dots, $C_n$, it is possible to place $m$ of them around a circle so that in any group of $n + 1$ consecutive marbles there is at least one marble of colour $C_i$ for each $i=1,\dots, n$. Prove that there are only finitely many positive integers which are not $n$-colourful. Find the largest among them.",
         source="ISL",
         year=2021,
         topic="C",
@@ -255,7 +255,7 @@ ISL2021_NO_G = ProblemSet([
         problem_number=2,
     ),
     Problem(
-        problem_statement=r"Find all positive integers $n$ with the following property: the $k$ positive divisors of $n$ have a permutation $(d_1, d_2, ... , d_k)$ such that for every $i = 1, 2, ... , k$, the number $d_1 + \cdots + d_i$ is a perfect square.",
+        problem_statement=r"Find all positive integers $n$ with the following property: the $k$ positive divisors of $n$ have a permutation $(d_1, d_2, \dots , d_k)$ such that for every $i = 1, 2, \dots , k$, the number $d_1 + \cdots + d_i$ is a perfect square.",
         source="ISL",
         year=2021,
         topic="N",
@@ -297,21 +297,21 @@ ISL2021_NO_G = ProblemSet([
         problem_number=8,
     ),
     Problem(
-        problem_statement=r"Let $n$ be an integer, and let $A$ be a subset of $\{0, 1, 2, 3, ... , 5^n\}$ consisting of $4n + 2$ numbers. Prove that there exist $a, b, c \in A$ such that $a<b<c$ and $c + 2a > 3b$.",
+        problem_statement=r"Let $n$ be an integer, and let $A$ be a subset of $\{0, 1, 2, 3, \dots , 5^n\}$ consisting of $4n + 2$ numbers. Prove that there exist $a, b, c \in A$ such that $a<b<c$ and $c + 2a > 3b$.",
         source="ISL",
         year=2021,
         topic="A",
         problem_number=1,
     ),
     Problem(
-        problem_statement=r"For every integer $n \geqslant 1$ consider the $n\times n$ table with entry $\left\lfloor\frac{ij}{n+1}\right\rfloor$ at the intersection of row $i$ and column $j$, for every $i = 1, .... , n$ and $j = 1, ... , n$. Determine all integers $n\geqslant1$ for which the sum of the $n^2$ entries in the table is equal to $\frac{1}{4}n^2(n-1)$.",
+        problem_statement=r"For every integer $n \geqslant 1$ consider the $n\times n$ table with entry $\left\lfloor\frac{ij}{n+1}\right\rfloor$ at the intersection of row $i$ and column $j$, for every $i = 1, \dots. , n$ and $j = 1, \dots , n$. Determine all integers $n\geqslant1$ for which the sum of the $n^2$ entries in the table is equal to $\frac{1}{4}n^2(n-1)$.",
         source="ISL",
         year=2021,
         topic="A",
         problem_number=2,
     ),
     Problem(
-        problem_statement=r"Given a positive integer $n$, find the smallest value of $$\left\lfloor\frac{a_1}{1}\right\rfloor+\left\lfloor\frac{a_2}{2}\right\rfloor+\cdots+\left\lfloor\frac{a_n}{n}\right\rfloor$$ over all permutations $(a_1, a_2, ... , a_n)$ of $(1, 2, ... , n)$.",
+        problem_statement=r"Given a positive integer $n$, find the smallest value of $$\left\lfloor\frac{a_1}{1}\right\rfloor+\left\lfloor\frac{a_2}{2}\right\rfloor+\cdots+\left\lfloor\frac{a_n}{n}\right\rfloor$$ over all permutations $(a_1, a_2, \dots , a_n)$ of $(1, 2, \dots , n)$.",
         source="ISL",
         year=2021,
         topic="A",
@@ -339,7 +339,7 @@ ISL2021_NO_G = ProblemSet([
         problem_number=6,
     ),
     Problem(
-        problem_statement=r"Let $n\geqslant1$ be an integer, and let $x_0$, $x_1$, \dots , $x_{n+1}$ be $n+2$ non-negative real numbers that satisfy $x_ix_{i+1}-x_{i-1}^2\geqslant1$ for all $i=1, 2, ... , n$. Show that $$x_0+x_1+\cdots+x_n+x_{n+1}>\left(\frac{2n}{3}\right)^{3/2}.$$",
+        problem_statement=r"Let $n\geqslant1$ be an integer, and let $x_0$, $x_1$, \dots , $x_{n+1}$ be $n+2$ non-negative real numbers that satisfy $x_ix_{i+1}-x_{i-1}^2\geqslant1$ for all $i=1, 2, \dots , n$. Show that $$x_0+x_1+\cdots+x_n+x_{n+1}>\left(\frac{2n}{3}\right)^{3/2}.$$",
         source="ISL",
         year=2021,
         topic="A",
@@ -399,7 +399,7 @@ ISL2020_NO_G = ProblemSet([
         problem_number=6,
     ),
     Problem(
-        problem_statement=r"Let $n$ and $k$ be positive integers. Prove that for $a_1,...,a_n\in [1, 2^k]$ one has $$\sum_{i=1}^n\frac{a_i}{\sqrt{a_1^2+\cdots+a_i^2}}\leqslant4\sqrt{kn}.$$",
+        problem_statement=r"Let $n$ and $k$ be positive integers. Prove that for $a_1,\dots,a_n\in [1, 2^k]$ one has $$\sum_{i=1}^n\frac{a_i}{\sqrt{a_1^2+\cdots+a_i^2}}\leqslant4\sqrt{kn}.$$",
         source="ISL",
         year=2020,
         topic="A",
@@ -434,14 +434,14 @@ ISL2020_NO_G = ProblemSet([
         problem_number=3,
     ),
     Problem(
-        problem_statement=r"The Fibonacci numbers $F_0$, $F_1$, $F_2$, \dots are defined inductively by $F_0=0$, $F_1=1$, and $F_{n+1}=F_n+F_{n-1}$ for $n\geqslant1$. Given an integer $n\geqslant2$, determine the smallest size of a set $S$ of integers such that for every $k=2, 3, ... , n$ there exist some $x, y\in S$ such that $x-y=F_k$.",
+        problem_statement=r"The Fibonacci numbers $F_0$, $F_1$, $F_2$, \dots are defined inductively by $F_0=0$, $F_1=1$, and $F_{n+1}=F_n+F_{n-1}$ for $n\geqslant1$. Given an integer $n\geqslant2$, determine the smallest size of a set $S$ of integers such that for every $k=2, 3, \dots , n$ there exist some $x, y\in S$ such that $x-y=F_k$.",
         source="ISL",
         year=2020,
         topic="C",
         problem_number=4,
     ),
     Problem(
-        problem_statement=r"Let $p$ be an odd prime, and put $N=\frac{1}{4}(p^3-p)-1$. The numbers 1, 2, \dots , $N$ are painted arbitrarily in two colors, red and blue. For any positive integer $n\leqslant N$, denote by $r(n)$ the fraction of integers in $\{1, 2, ... , n\}$ that are red. Prove that there exists a positive integer $a\in \{1, 2, ... , p-1\}$ such that $r(n)\neq a/p$ for all $n=1, 2, ... , N$.",
+        problem_statement=r"Let $p$ be an odd prime, and put $N=\frac{1}{4}(p^3-p)-1$. The numbers 1, 2, \dots , $N$ are painted arbitrarily in two colors, red and blue. For any positive integer $n\leqslant N$, denote by $r(n)$ the fraction of integers in $\{1, 2, \dots , n\}$ that are red. Prove that there exists a positive integer $a\in \{1, 2, \dots , p-1\}$ such that $r(n)\neq a/p$ for all $n=1, 2, \dots , N$.",
         source="ISL",
         year=2020,
         topic="C",
@@ -470,7 +470,7 @@ ISL2020_NO_G = ProblemSet([
     ),
 
     Problem(
-        problem_statement=r"Given a positive integer $k$, show that there exists a prime $p$ such that one can choose distinct integers $a_1$, $a_2$, \dots , $a_{k+3}\in\{1, 2, ... , p-1\}$ such that $p$ divides $a_ia_{i+1}a_{i+2}a_{i+3}-i$ for all $i=1, 2, ... , k$.",
+        problem_statement=r"Given a positive integer $k$, show that there exists a prime $p$ such that one can choose distinct integers $a_1$, $a_2$, \dots , $a_{k+3}\in\{1, 2, \dots , p-1\}$ such that $p$ divides $a_ia_{i+1}a_{i+2}a_{i+3}-i$ for all $i=1, 2, \dots , k$.",
         source="ISL",
         year=2020,
         topic="N",
@@ -484,14 +484,14 @@ ISL2020_NO_G = ProblemSet([
         problem_number=2,
     ),
     Problem(
-        problem_statement=r"Let $n\geqslant2$ be an integer. Does there exist a sequence $(a_1, ... , a_n)$ of positive integers with not all terms being equal such that the arithmetic mean of every two terms is equal to the geometric mean of some (one or more) terms in this sequence?",
+        problem_statement=r"Let $n\geqslant2$ be an integer. Does there exist a sequence $(a_1, \dots , a_n)$ of positive integers with not all terms being equal such that the arithmetic mean of every two terms is equal to the geometric mean of some (one or more) terms in this sequence?",
         source="ISL",
         year=2020,
         topic="N",
         problem_number=3,
     ),
     Problem(
-        problem_statement=r"For any odd prime $p$ and any integer $n$, let $d_p(n)\in \{0, 1, ... , p-1\}$ denote the remainder when $n$ is divided by $p$. We say that $(a_0, a_1, a_2, ...)$ is a $p$-sequence, if $a_0$ is a positive integer coprime to $p$, and $a_{n+1}=a_n+d_p(a_n)$ for $n\geqslant0$. \begin{enumerate}[(a)] \item Do there exist infinitely many primes $p$ for which there exist $p$-sequences $(a_0, a_1, a_2, ...)$ and $(b_0, b_1, b_2, ...)$ such that $a_n > b_n$ for infinitely many $n$, and $b_n>a_n$ for infinitely many $n$? \item Do there exist infinitely many primes $p$ for which there exist $p$-sequences $(a_0, a_1, a_2, ...)$ and $(b_0, b_1, b_2, ...)$ such that $a_0 < b_0$, but an $a_n>b_n$ for all $n\geqslant1$?\end{enumerate}",
+        problem_statement=r"For any odd prime $p$ and any integer $n$, let $d_p(n)\in \{0, 1, \dots , p-1\}$ denote the remainder when $n$ is divided by $p$. We say that $(a_0, a_1, a_2, \dots)$ is a $p$-sequence, if $a_0$ is a positive integer coprime to $p$, and $a_{n+1}=a_n+d_p(a_n)$ for $n\geqslant0$. \begin{enumerate}[(a)] \item Do there exist infinitely many primes $p$ for which there exist $p$-sequences $(a_0, a_1, a_2, \dots)$ and $(b_0, b_1, b_2, \dots)$ such that $a_n > b_n$ for infinitely many $n$, and $b_n>a_n$ for infinitely many $n$? \item Do there exist infinitely many primes $p$ for which there exist $p$-sequences $(a_0, a_1, a_2, \dots)$ and $(b_0, b_1, b_2, \dots)$ such that $a_0 < b_0$, but an $a_n>b_n$ for all $n\geqslant1$?\end{enumerate}",
         source="ISL",
         year=2020,
         topic="N",
@@ -530,14 +530,14 @@ ISL2019_NO_G = ProblemSet([
         problem_number=1,
     ),
     Problem(
-        problem_statement=r"Let $u_1$, $u_2$, \dots , $u_{2019}$ be real numbers satisfying $$u_1+u_2+\cdots+u_{2019}=0$$ and $$u_1^2+u_2^2+\cdots+u_{2019}^2.$$ Let $a=\min(u_1, u_2, ... , u_{2019})$ and $b=\max(u_1, u_2, ... , u_{2019})$. Prove that $$ab\leqslant-\frac{1}{2019}.$$",
+        problem_statement=r"Let $u_1$, $u_2$, \dots , $u_{2019}$ be real numbers satisfying $$u_1+u_2+\cdots+u_{2019}=0$$ and $$u_1^2+u_2^2+\cdots+u_{2019}^2.$$ Let $a=\min(u_1, u_2, \dots , u_{2019})$ and $b=\max(u_1, u_2, \dots , u_{2019})$. Prove that $$ab\leqslant-\frac{1}{2019}.$$",
         source="ISL",
         year=2019,
         topic="A",
         problem_number=2,
     ),
     Problem(
-        problem_statement=r"Let $n\geqslant3$ be a positive integer and let $(a_1, a_2, ... , a_n)$ be a strictly increasing sequence of $n$ positive real numbers with sum equal to 2. Let $X$ be a subset of $\{1, 2, ... , n\}$ such that the value of $$\left\lvert 1-\sum_{i\in X}a_i\right\rvert$$ is minimised. Prove that there exists a strictly increasing sequence of $n$ positive real numbers $(b_1, b_2, ... , b_n)$ with sum equal to 2 such that $$\sum_{i\in X}b_i=1.$$",
+        problem_statement=r"Let $n\geqslant3$ be a positive integer and let $(a_1, a_2, \dots , a_n)$ be a strictly increasing sequence of $n$ positive real numbers with sum equal to 2. Let $X$ be a subset of $\{1, 2, \dots , n\}$ such that the value of $$\left\lvert 1-\sum_{i\in X}a_i\right\rvert$$ is minimised. Prove that there exists a strictly increasing sequence of $n$ positive real numbers $(b_1, b_2, \dots , b_n)$ with sum equal to 2 such that $$\sum_{i\in X}b_i=1.$$",
         source="ISL",
         year=2019,
         topic="A",
@@ -653,7 +653,7 @@ ISL2019_NO_G = ProblemSet([
         problem_number=2,
     ),
     Problem(
-        problem_statement=r"We say that a set $S$ of integers is \emph{rootiful} if, for any positive integer $n$ and any $a_0, a_1, ... , a_n\in S$, all integer roots of the polynomial $a_0+a_1x+\cdots+a_nx^n$ are also in $S$. Find all rootiful sets of integers that contain all numbers of the form $2^a-2^b$ for positive integers $a$ and $b$.",
+        problem_statement=r"We say that a set $S$ of integers is \emph{rootiful} if, for any positive integer $n$ and any $a_0, a_1, \dots , a_n\in S$, all integer roots of the polynomial $a_0+a_1x+\cdots+a_nx^n$ are also in $S$. Find all rootiful sets of integers that contain all numbers of the form $2^a-2^b$ for positive integers $a$ and $b$.",
         source="ISL",
         year=2019,
         topic="N",
@@ -674,7 +674,7 @@ ISL2019_NO_G = ProblemSet([
         problem_number=5,
     ),
     Problem(
-        problem_statement=r"Let $H=\{\left\lfloor i\sqrt{2}\right\rfloor : i \in \mathbb{N}\}= \{1, 2, 4, 5, 7, . . .\}$, and let $n$ be a positive integer. Prove that there exists a constant $C$ such that, if $A \subset \{1, 2, ... , n\}$ satisfies $\lvert A\rvert\geqslant C\sqrt{n}$, then there exist $a, b\in A$ such that $a-b\in H$.",
+        problem_statement=r"Let $H=\{\left\lfloor i\sqrt{2}\right\rfloor : i \in \mathbb{N}\}= \{1, 2, 4, 5, 7, . . .\}$, and let $n$ be a positive integer. Prove that there exists a constant $C$ such that, if $A \subset \{1, 2, \dots , n\}$ satisfies $\lvert A\rvert\geqslant C\sqrt{n}$, then there exist $a, b\in A$ such that $a-b\in H$.",
         source="ISL",
         year=2019,
         topic="N",
@@ -706,21 +706,21 @@ ISL2018_NO_G = ProblemSet([
         problem_number=1,
     ),
         Problem(
-        problem_statement=r"Find all positive integers $n \geqslant 3$ for which there exist real numbers $a_1$, $a_2$, \dots , $a_n$, $a_{n+1}=a_1$, $a_{n+2}=a_2$ such that $$a_ia_{i+1}+1=a_{i+2}$$ for all $i=1, 2, ... , n$.",
+        problem_statement=r"Find all positive integers $n \geqslant 3$ for which there exist real numbers $a_1$, $a_2$, \dots , $a_n$, $a_{n+1}=a_1$, $a_{n+2}=a_2$ such that $$a_ia_{i+1}+1=a_{i+2}$$ for all $i=1, 2, \dots , n$.",
         source="ISL",
         year=2018,
         topic="A",
         problem_number=2,
     ),
     Problem(
-        problem_statement=r"Given any set $S$ of positive integers, show that at least one of the following two assertions holds: \begin{enumerate}\item There exist distinct finite subsets $F$ and $G$ of $S$ such that $\sum_{x\in F}1/x=\sum_{x\in G} 1/x$; \item There exists a positive rational number $r<1$ such that $\sum_{x\in F}1/x\neq r$ for all finite subsets $F$ of $S$.\end{enumerate}",
+        problem_statement=r"Given any set $S$ of positive integers, show that at least one of the following two assertions holds: \begin{enumerate}[(1)]\item There exist distinct finite subsets $F$ and $G$ of $S$ such that $\sum_{x\in F}1/x=\sum_{x\in G} 1/x$; \item There exists a positive rational number $r<1$ such that $\sum_{x\in F}1/x\neq r$ for all finite subsets $F$ of $S$.\end{enumerate}",
         source="ISL",
         year=2018,
         topic="A",
         problem_number=3,
     ),
     Problem(
-        problem_statement=r"Let $a_0$, $a_1$, $a_2$, \dots  be a sequence of real numbers such that $a_0=0$, $a_1=1$, and for every $n\geqslant2$ there exists $1\leqslant k\leqslant n$ satisfying $$a_n=\frac{a_{n-1}+\cdots+a_{n-k}}{k}.$$ Find the maximal possible value of $a_{2018}-a_{2017}$.",
+        problem_statement=r"Let $a_0$, $a_1$, $a_2$, $\dots$  be a sequence of real numbers such that $a_0=0$, $a_1=1$, and for every $n\geqslant2$ there exists $1\leqslant k\leqslant n$ satisfying $$a_n=\frac{a_{n-1}+\cdots+a_{n-k}}{k}.$$ Find the maximal possible value of $a_{2018}-a_{2017}$.",
         source="ISL",
         year=2018,
         topic="A",
@@ -734,7 +734,7 @@ ISL2018_NO_G = ProblemSet([
         problem_number=5,
     ),
     Problem(
-        problem_statement=r"Let $m, n \geqslant 2$ be integers. Let $f(x_1, ... , x_n)$ be a polynomial with real coeffients such that $$f(x_1, ... , x_n)=\left\lfloor\frac{x_1 + ... + x_n}{m}\right\rfloor$$ for every $x_1, ... , x_n \in \{0, 1, ... , m-1\}$. Prove that the total degree of $f$ is at least $n$.",
+        problem_statement=r"Let $m, n \geqslant 2$ be integers. Let $f(x_1, \dots , x_n)$ be a polynomial with real coefficients such that $$f(x_1, \dots , x_n)=\left\lfloor\frac{x_1 + \dots + x_n}{m}\right\rfloor\qquad\text{for every }x_1, \dots , x_n \in \{0, 1, \dots , m-1\}.$$ Prove that the total degree of $f$ is at least $n$.",
         source="ISL",
         year=2018,
         topic="A",
@@ -751,7 +751,7 @@ ISL2018_NO_G = ProblemSet([
 
 
     Problem(
-        problem_statement=r"Let $n\geqlsant3$ be an integer. Prove that there exists a set $S$ of $2n$ positive integers satisfying the following property: For every $m=2, 3, ... , n$ the set $S$ an be partitioned into two subsets with equal sums of elements, with one of subsets of ardinality $m$.",
+        problem_statement=r"Let $n\geqslant3$ be an integer. Prove that there exists a set $S$ of $2n$ positive integers satisfying the following property: For every $m=2, 3, \dots , n$ the set $S$ an be partitioned into two subsets with equal sums of elements, with one of subsets of cardinality $m$.",
         source="ISL",
         year=2018,
         topic="C",
@@ -772,7 +772,7 @@ ISL2018_NO_G = ProblemSet([
         problem_number=3,
     ),
     Problem(
-        problem_statement=r"",
+        problem_statement=r"TODO!",
         source="ISL",
         year=2018,
         topic="C",
@@ -811,21 +811,21 @@ ISL2018_NO_G = ProblemSet([
         problem_number=1,
     ),
     Problem(
-        problem_statement=r"",
+        problem_statement=r"Let $n>1$ be a positive integer. Each cell of an $n\times n$ table contains an integer. Suppose that the following conditions are satisfied: \begin{enumerate}[(i)]\item Each number in the table is congruent to $1$ modulo $n$; \item The sum of numbers in any row, as well as the sum of numbers in any column, is congruent to $n$ modulo $n^2$.\end{enumerate} Let $R_i$ be the product of the numbers in the $i$th row, and $C_j$ be the product of the numbers in the $j$th column. Prove that the sums $R_1+\cdots+R_n$ and $C_1+\cdots+C_n$ are congruent modulo $n^4$.",
         source="ISL",
         year=2018,
         topic="N",
         problem_number=2,
     ),
     Problem(
-        problem_statement=r"Define the sequence $a_0$, $a_1$, $a_2$, \dots  by $a_n=2^n+2^{\lfloor n/2\rfloor}$. Prove that there are infinitely many terms of the sequence which can be expressed as a sum of (two or more) distinct terms of the sequence, as well as infinitely many of those which cannot be expressed in such a way.",
+        problem_statement=r"Define the sequence $a_0$, $a_1$, $a_2$, $\dots$ by $a_n=2^n+2^{\lfloor n/2\rfloor}$. Prove that there are infinitely many terms of the sequence which can be expressed as a sum of (two or more) distinct terms of the sequence, as well as infinitely many of those which cannot be expressed in such a way.",
         source="ISL",
         year=2018,
         topic="N",
         problem_number=3,
     ),
     Problem(
-        problem_statement=r"Let $a_1$, $a_2$, \dots , $a_n$, \dots  be a sequence of  ositive integers such that $$\frac{a_1}{a_2}+$\frac{a_2}{a_3}+\cdots+$\frac{a_{n-1}}{a_n}+$\frac{a_n}{a_1}$$ is an integer for all $n\geqslant k$, where $k$ is some positive integer. Prove that there exists a positive integer $m$ such that $a_n=a_{n+1}$ for all $n\geqslant m$.",
+        problem_statement=r"Let $a_1$, $a_2$, \dots , $a_n$, $\dots$  be a sequence of positive integers such that $$\frac{a_1}{a_2}+\frac{a_2}{a_3}+\cdots+\frac{a_{n-1}}{a_n}+\frac{a_n}{a_1}$$ is an integer for all $n\geqslant k$, where $k$ is some positive integer. Prove that there exists a positive integer $m$ such that $a_n=a_{n+1}$ for all $n\geqslant m$.",
         source="ISL",
         year=2018,
         topic="N",
@@ -839,17 +839,197 @@ ISL2018_NO_G = ProblemSet([
         problem_number=5,
     ),
     Problem(
-        problem_statement=r"Let $f : \{1, 2, 3, ...\} \to \{2, 3, ...\}$ be a function such that $f(m+n) \mid f(m)+f(n)$ for all pairs $m, n$ of positive integers. Prove that there exists a positive integer $c>1$ which divides all values of $f$.",
+        problem_statement=r"Let $f : \{1, 2, 3, \dots\} \to \{2, 3, \dots\}$ be a function such that $f(m+n) \mid f(m)+f(n)$ for all pairs $m, n$ of positive integers. Prove that there exists a positive integer $c>1$ which divides all values of $f$.",
         source="ISL",
         year=2018,
         topic="N",
         problem_number=6,
     ),
     Problem(
-        problem_statement=r"Let $n\geqslant2018$ be an integer, and let $a_1$, $a_2$, \dots , $a_n$, $b_1$, $b_2$, \dots , $b_n$ be pairwise distinct positive integers not exceeding $5n$. Suppose that the sequence $$\frac{a_1}{b_1}, \frac{a_2}{b_2}, ... , \frac{a_n}{b_n}$$ forms an arithmetic progression. Prove that the terms of the sequence are equal.",
+        problem_statement=r"Let $n\geqslant2018$ be an integer, and let $a_1$, $a_2$, \dots , $a_n$, $b_1$, $b_2$, \dots , $b_n$ be pairwise distinct positive integers not exceeding $5n$. Suppose that the sequence $$\frac{a_1}{b_1}, \frac{a_2}{b_2}, \dots , \frac{a_n}{b_n}$$ forms an arithmetic progression. Prove that the terms of the sequence are equal.",
         source="ISL",
         year=2018,
         topic="N",
         problem_number=7,
     ),
+])
+
+
+ISL2017_NO_G = ProblemSet([
+    Problem(
+        problem_statement=r"Let $a_1$, $a_2$, \dots , $a_n$, $k$, and $M$ be positive integers such that $$\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_n}=k\qquad\text{and}\qquad a_1a_2\dots a_n=M.$$ If $M>1$, prove that the polynomial $$P(x)=M(x+1)^k-(x+a_1)(x+a_2)\cdots(x+a_n)$$ has no positive roots.",
+        source="ISL",
+        year=2017,
+        topic="A",
+        problem_number=1,
+    ),
+    Problem(
+        problem_statement=r"Let $q$ be a real number. Gugu has a napkin with ten distinct real numbers written on it, and he writes the following three lines of real numbers on the blackboard: \begin{itemize} \item In the first line, Gugu writes down every number of the form $a-b$, where $a$ and $b$ are two (not necessarily distinct) numbers on his napkin.\item In the second line, Gugu writes down every number of the form $qab$, where $a$ and $b$ are two (not necessarily distinct) numbers from the \emph{first line}.\item In the third line, Gugu writes down every number of the form $a^2+b^2-c^2-d^2$, where $a$, $b$, $c$, $d$ are four (not necessarily distinct) numbers from the \emph{first line}.\end{itemize} Determine all values of $q$ such that, regardless of the numbers on Gugu's napkin, every number in the second line is also a number in the third line.",
+        source="ISL",
+        year=2017,
+        topic="A",
+        problem_number=2,
+    ),
+    Problem(
+        problem_statement=r"Let $S$ be a finite set, and let $\mathcal{A}$ be the set of all functions from $S$ to $S$. Let $f$ b  an element of $\mathcal{A}$, and let $T=f(S)$ be the image of $S$ under $f$. Suppose that $f\circ g\circ f\neq g\circ f\circ g$ for every $g$ in $\mathcal{A}$ with $g\neq f$. Show that $f(T)=T$.",
+        source="ISL",
+        year=2017,
+        topic="A",
+        problem_number=3,
+    ),
+    Problem(
+        problem_statement=r"A sequence of real numbers $a_1$, $a_2$, $\dots$ satisfies the relation $$a_n=-\max_{i+j=n}\left(a_i+a_j\right)\qquad\text{for all }n>2017.$$ Prove that this sequence is bounded, i.e., there is a constant $M$ such that $\left\lvert a_n\right\rvert\leqslant M$ for all positive integers $n$.",
+        source="ISL",
+        year=2017,
+        topic="A",
+        problem_number=4,
+    ),
+    Problem(
+        problem_statement=r"An integer $n\geqslant3$ is given. We call an $n$-tuple of real numbers $(x_1, x_2, \dots , x_n)$ \emph{Shiny} if for each permutation $y_1$, $y_2$, \dots , $y_n$ of these numbers we have $$\sum_{i=1}^{n-1}y_iy_{i+1}=y_1y_2+y_2y_3+\cdots+y_{n-1}y_n\geqslant -1.$$ Find the largest constant $K=K(n)$ such that $$\sum_{1\leqslant i<j\leqslant n}x_ix_j\geqslant K$$ holds for every Shiny $n$-tuple $(x_1, x_2, \dots , x_n)$.",
+        source="ISL",
+        year=2017,
+        topic="A",
+        problem_number=5,
+    ),
+    Problem(
+        problem_statement=r"Find all functions $f:\mathbb{R}\to\mathbb{R}$ such that $$f(f(x)f(y))+f(x+y)=f(xy)$$ for all $x,y\in\mathbb{R}$.",
+        source="ISL",
+        year=2017,
+        topic="A",
+        problem_number=6,
+    ),
+    Problem(
+        problem_statement=r"Let $a_0$, $a_1$, $a_2$, \dots  be a sequence of integers and $b_0$, $b_1$, $b_2$, \dots  be a sequence of \emph{positive} integers such that $a_0=0$, $a_1=1$, and $$a_{n+1}=\begin{cases}a_nb_n+a_{n-1}, & \text{if }b_{n-1}=1 \\ a_nb_n-a_{n-1}, & \text{if }b_{n-1}>1\end{cases}\qquad\text{for }n=1,2,\dots.$$ Prove that at least one of the two numbers $a_{2017}$ and $a_{2018}$ must be greater than or equal to $2017$.",
+        source="ISL",
+        year=2017,
+        topic="A",
+        problem_number=7,
+    ),
+    Problem(
+        problem_statement=r"Assume a function $f:\mathbb{R}\to\mathbb{R}$ satisfies the following condition: \\\\ \textit{For every $x,y\in\mathbb{R}$ such that $\left(f(x)+y\right)\left(f(y)+x\right)>0$ we have $f(x)+y=f(y)+x$}.\\\\ Prove that $f(x)+y\leqslant f(y)+x$ whenever $x>y$.",
+        source="ISL",
+        year=2017,
+        topic="A",
+        problem_number=8,
+    ),
+
+
+
+    Problem(
+        problem_statement=r"A rectangle $\mathcal{R}$ with odd integer side lengths is divided into small rectangles with integer side lengths. Prove that there is at least one among the small rectangles whose distances from the four sides of $\mathcal{R}$ are either all odd or all even.",
+        source="ISL",
+        year=2017,
+        topic="C",
+        problem_number=1,
+    ),
+    Problem(
+        problem_statement=r"Let $n$ be a positive integer. Define a \emph{chameleon} to be any sequence of $3n$ letters, with exactly $n$ ocurrences of each of the letters $a$, $b$, and $c$. Define a \emph{swap} to be the transposition of two adjacent letters in a chameleon. Prove that for any chameleon $X$, there exists a chameleon $Y$ such that $X$ cannot be changed to $Y$ using fewer than $3n^2/2$ swaps.",
+        source="ISL",
+        year=2017,
+        topic="C",
+        problem_number=2,
+    ),
+    Problem(
+        problem_statement=r"Sir Alex plays the following game on a row of 9 cells. Initially, all cells are empty. In each move, Sir Alex is allowed to perform exactly one of the following two operations: \begin{enumerate}[(1)]\item Choose any number of the form $2^j$, where $j$ is a non-negative integer, and put it into an empty cell.\item Choose two (not necessarily adjacent) cells with the same number in them; denote that number by $2^j$. Replace the number in one of the cells with $2^{j+1}$ and erase the number in the other cell.\end{enumerate} At the end of the game, one cell contains the number $2^n$, where $n$ is a given positive integer, while the other cells are empty. Determine the maximum number of moves that Sir Alex could have made, in terms of $n$.",
+        source="ISL",
+        year=2017,
+        topic="C",
+        problem_number=3,
+    ),
+    Problem(
+        problem_statement=r"Let $N\geqslant2$ be an integer. $N(N+1)$ soccer players, no two of the same height, stand in a row in some order. Coach Ralph wants to remove $N(N-1)$ people from this row so that in the remaining row of $2N$ players, no one stands between the two tallest ones, no one stands between the third and the fourth tallest ones, \dots , and finally no one stands between the two shortest ones. Show that this is always possible.",
+        source="ISL",
+        year=2017,
+        topic="C",
+        problem_number=4,
+    ),
+    Problem(
+        problem_statement=r"A hunter and an invisible rabbit play a game in the Euclidean plane. The hunter's starting point $H_0$ coincides with the rabbit's starting point $R_0$. In the $n$th round of the game ($n\geqslant1$), the following happens. \begin{enumerate}[(1)]\item First the invisible rabbit moves secretly and unobserved from its current point $R_{n-1}$ to some new point $R_n$ with $R_{n-1}R_n=1$.\item The hunter has a tracking device (e.g. dog) that returns an approximate position $R_n'$ of the rabbit, so that $R_nR_n'$\leqslant 1$.\item The hunter then visibly moves from point $H_{n-1}$ to a new point $H_n$ with $H_{n-1}H_n=1$.\end{enumerate} Is there a strategy for the hunter that guarantees that after $10^9$ such rounds the distance between the hunter and the rabbit is below 100?",
+        source="ISL",
+        year=2017,
+        topic="C",
+        problem_number=5,
+    ),
+    Problem(
+        problem_statement=r"Let $n>1$ be an integer. An $n\times n\times n$ cube is composed of $n^3$ unit cubes. Each unit cube is painted with one color. For each $n\times n\times 1$ box consisting of $n^2$ unit cubes (of any of the three possible orientations), we consider the set of the colors present in that box (each color is listed only once). This way, we get $3n$ sets of colors, split into three groups according to the orientation. It happens that for every set in any group, the same set appears in both of the other groups. Determine, in terms of $n$, the maximal possible number of colors that are present.",
+        source="ISL",
+        year=2017,
+        topic="C",
+        problem_number=6,
+    ),
+    Problem(
+        problem_statement=r"For any finite sets $X$ and $Y$ of positive integers, denote by $f_X(k)$ the $k$th smallest positive integer not in $X$, and let $$X*Y=X\cup\{f_X(y) : y\in Y\}.$$ Let $A$ be a set of $a>0$ positive integers, and let $B$ be a set of $b>0$ positive integers. Prove that if $A*B=B*A$, then $$\underbrace{A*(A*\cdots*(A*(A*A))\dots)}_{A\text{ appears }b\text{ times}}=\underbrace{B*(B*\cdots*(B*(B*B))\dots)}_{B\text{ appears }a\text{ times}}.$$",
+        source="ISL",
+        year=2017,
+        topic="C",
+        problem_number=7,
+    ),
+    Problem(
+        problem_statement=r"Let $n$ be a given positive integer. In the Cartesian plane, each lattice point with nonnegative coordinates initially contains a butterfly, and there are no other butterflies. The \emph{neighborhood} of a lattice point $c$ consists of all lattice points within the axis-aligned $(2n+1)\times(2n+1)$ square entered at $c$, apart from $c$ itself. We all a butterfly \emph{lonely}, \emph{crowded}, or \emph{comfortable}, depending on whether the number of butterflies in its neighborhood $N$ is respectively less than, greater than, or equal to half of the number of lattice points in $N$. Every minute, all lonely butterflies fly away simultaneously. This process goes on for as long as there are any lonely butterflies. Assuming that the process eventually stops, determine the number of comfortable butterflies at the final state.",
+        source="ISL",
+        year=2017,
+        topic="C",
+        problem_number=8,
+    ),
+
+
+
+
+    Problem(
+        problem_statement=r"The sequence $a_0$, $a_1$, $a_2$, $\dots$  of positive integers satisfies $$a_{n+1}=\begin{cases}\sqrt{a_n}, & \text{if }\sqrt{a_n}\text{ is an integer}\\ a_n+3, & \text{otherwise}\end{cases}\qquad\text{for every }n\geqslant0.$$ Determine all values of $a_0>1$ for which there is at least one number $a$ such that $a_n=a$ for infinitely many values of $n$.",
+        source="ISL",
+        year=2017,
+        topic="N",
+        problem_number=1,
+    ),
+    Problem(
+        problem_statement=r"Let $p\geqslant2$ be a prime number. Eduardo and Fernando play the following game making moves alternately: in each move, the current player chooses an index $i$ in the set $\{0, 1, \dots , p-1\}$ that was not chosen before by either of the two players and then chooses an element $a_i$ of the set $\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\}$. Eduardo has the first move. The game ends after all the indices $i\in\{0, 1, \dots , p-1\}$ have been chosen. Then the following number is computed: $$M=a_0+10\cdot a_1+\cdots+10^{p-1}\cdot a_{p-1}=\sum_{j=0}^{p-1}a_j\cdot10^j.$$ The goal of Eduardo is to make the number $M$ divisible by $p$, and the goal of Fernando is to prevent this. Prove that Eduardo has a winning strategy.",
+        source="ISL",
+        year=2017,
+        topic="N",
+        problem_number=2,
+    ),
+    Problem(
+        problem_statement=r"Determine all integers $n\geqslant2$ with the following property: for any integers $a_1$, $a_2$, \dots , $a_n$ whose sum is not divisible by $n$, there exists an index $1\leqslant i\leqslant n$ such that none of the numbers $$a_i, a_i+a_{i+1}, \dots , a_i+a_{i+1}+\cdots+a_{i+n-1}$$ is divisible by $n$. (We let $a_i=a_{i-n}$ when $i>n$.)",
+        source="ISL",
+        year=2017,
+        topic="N",
+        problem_number=3,
+    ),
+    Problem(
+        problem_statement=r"Call a rational number \emph{short} if it has finitely many digits in its decimal expansion. For a positive integer $m$, we say that a positive integer $t$ is $m$-\emph{tastic} if there exists a number $c\in\{1, 2, 3, \dots , 2017\}$ such that $\frac{10^t-1}{c\cdot m}$ is short, and such that $\frac{10^k-1}{c\cdot m}$ is not short for any $1\leqslant k<t$. Let $S(m)$ be the set of $m$-tastic numbers. Consider $S(m)$ for $m=1, 2, \dots$. What is the maximum number of elements in $S(m)$?",
+        source="ISL",
+        year=2017,
+        topic="N",
+        problem_number=4,
+    ),
+    Problem(
+        problem_statement=r"Find all pairs $(p, q)$ of prime numbers with $p>q$ for which the number $$\frac{(p+q)^{p+q}(p-q)^{p-q}-1}{(p+q)^{p-q}(p-q)^{p+q}-1}$$ is an integer.",
+        source="ISL",
+        year=2017,
+        topic="N",
+        problem_number=5,
+    ),
+    Problem(
+        problem_statement=r"Find the smallest positive integer $n$, or show that no such $n$ exists, with the following property: there are infinitely many distinct $n$-tuples of positive rational numbers $(a_1, a_2, \dots , a_n)$ such that both $$a_1+a_2+\cdots+a_n\qquad\text{and}\qquad\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_n}$$ are integers.",
+        source="ISL",
+        year=2017,
+        topic="N",
+        problem_number=6,
+    ),
+    Problem(
+        problem_statement=r"Say that an ordered pair $(x, y)$ of integers is an \emph{irreducible lattice point} if $x$ and $y$ are relatively prime. For any finite set $S$ of irreducible lattice points, show that there is a homogenous polynomial in two variables, $f(x, y)$, with integer coefficients, of degree at least 1, such that $f(x, y)=1$ for each $(x, y)$ in the set $S$.",
+        source="ISL",
+        year=2017,
+        topic="N",
+        problem_number=7,
+    ),
+    Problem(
+        problem_statement=r"Let $p$ be an odd prime number. Suppose that a function $f : \mathbb{N}\times\mathbb{N} \to \{0, 1\}$ satisfies the following properties: \begin{itemize}\item $f(1,1)=0$;\item $f(a,b)+f(b,a)=1$ for any pair of relatively prime positive integers $(a,b)$ not both equal to $1$;\item $f(a+b,b)=f(a,b)$ for any pair of relatively prime positive integers $(a,b)$.\end{itemize} Prove that $$\sum_{n=1}^{p-1}f(n^2,p)\geqslant\sqrt{2p}-2.$$",
+        source="ISL",
+        year=2017,
+        topic="N",
+        problem_number=8,
+    ),
+
 ])

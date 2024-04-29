@@ -72,6 +72,11 @@ class ProblemSet:
                     problem.problem_statement += f" \\textit{{({problem.source} {problem.topic}{problem.problem_number}, {problem.year})}}"
                 else:
                     problem.problem_statement += f" \\textit{{({problem.source} P{problem.problem_number}, {problem.year})}}"
+        else:
+            for problem in self.problems:
+                # Still add the year (without revealing difficulty!), so people can find it if they want to.
+                if str(problem.year) not in problem.problem_statement:
+                    problem.problem_statement += f" \\textit{{({problem.year})}}"
 
         with open(f"output/{output_filename}.tex", "w") as f:
             f.write(
@@ -105,7 +110,8 @@ class ProblemSet:
         #         subprocess.run(["sudo", "apt-get", "install", "-y", "texlive"], check=True)
         #     else:
         #         raise NotImplementedError("pdflatex is not installed and the system is not recognized as Linux. Please install pdflatex manually, or implement it here.")
-        subprocess.run(["pdftex_custom/pdftex_custom", "-output-directory=output/", "-interaction=nonstopmode", f"output/{output_filename}.tex"])
+        # subprocess.run(["pdftex_custom/pdftex_custom", "-output-directory=output/", "-interaction=nonstopmode", f"output/{output_filename}.tex"])
+        subprocess.run(["pdflatex", "-output-directory=output/", "-interaction=nonstopmode", f"output/{output_filename}.tex"])
 
         if remove_crap:
             for filename in os.listdir("output/"):

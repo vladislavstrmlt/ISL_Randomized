@@ -2,26 +2,42 @@
 Streamlit app
 """
 import streamlit as st
-from problems import ISL2020_NO_G
+from problems import ISL2020_NO_G, ISL2017_NO_G, ISL2018_NO_G, ISL2019_NO_G
 
-PROBLEMS = ISL2020_NO_G
+PROBLEMS = ISL2018_NO_G
 
 
 def main():
     st.title("ISL Problems")
     st.write("Practise for the IMO!")
 
-    topics = st.multiselect("Select topics", ["A", "C", "G", "N"], default=["A", "C", "G", "N"])
-    include_unlabelled = st.checkbox("Include unlabelled problems")
+    A = st.checkbox("Algebra", value=True)
+    C = st.checkbox("Combinatorics", value=True)
+    G = st.checkbox("Geometry", value=False, disabled=True)
+    N = st.checkbox("Number Theory", value=True)
+
+    topics = []
+    if A:
+        topics.append("A")
+    if C:
+        topics.append("C")
+    if G:
+        topics.append("G")
+    if N:
+        topics.append("N")
+
+
+    # include_unlabelled = st.checkbox("Include unlabelled problems")
+    randomize_order = st.checkbox("Randomize order")
     sources = st.checkbox("Show sources")
     num_problems = st.number_input("Number of problems", min_value=1, max_value=len(PROBLEMS), value=5)
 
     if st.button("Generate PDF"):
         PROBLEMS.to_pdf(
             topics=topics,
-            include_unlabelled=include_unlabelled,
+            include_unlabelled=False,
             sources=sources,
-            randomize_order=True,
+            randomize_order=randomize_order,
             remove_crap=True,
             output_filename="streamlit_generated",
             num_problems=num_problems,

@@ -4,7 +4,7 @@ Problem database.
 from models import Problem, ProblemSet
 
 
-ISL2022_NO_G = ProblemSet([
+ISL2022 = ProblemSet([
     Problem(
         problem_statement=r"Let $(a_n)_{n\geqslant1}$ be a sequence of positive real numbers with the property that $$(a_{n+1})^2+a_na_{n+2}\leqslant a_n+a_{n+2}$$ for all positive integers $n$. Show that $a_{2022}\leqslant1$.",
         source="ISL",
@@ -183,7 +183,7 @@ ISL2022_NO_G = ProblemSet([
 ])
 
 
-ISL2021_NO_G = ProblemSet([
+ISL2021 = ProblemSet([
    Problem(
         problem_statement=r"Let $S$ be an infinite set of positive integers, such that there exist four pairwise distinct $a, b, c, d \in S$ with $\gcd(a,b)\neq\gcd(c,d)$. Prove that there exist three pairwise distinct $x, y, z \in S$ such that $\gcd(x,y)=\gcd(y,z)\neq\gcd(z,x)$.",
         source="ISL",
@@ -355,7 +355,7 @@ ISL2021_NO_G = ProblemSet([
 ])
 
 
-ISL2020_NO_G = ProblemSet([
+ISL2020 = ProblemSet([
     Problem(
         problem_statement=r"For every positive integer $N$, determine the smallest real number $b_N$ such that, for all real $x$, $$\sqrt[N]{\frac{x^{2N}+1}{2}}\leqslant b_N(x-1)^{2}+x.$$",
         source="ISL",
@@ -521,7 +521,7 @@ ISL2020_NO_G = ProblemSet([
 ])
 
 
-ISL2019_NO_G = ProblemSet([
+ISL2019 = ProblemSet([
     Problem(
         problem_statement=r"Determine all functions $f:\mathbb{Z}\to\mathbb{Z}$ such that, for all integers $a$ and $b$, $$f(2a)+2f(b)=f(f(a+b)).$$",
         source="ISL",
@@ -697,7 +697,7 @@ ISL2019_NO_G = ProblemSet([
 ])
 
 
-ISL2018_NO_G = ProblemSet([
+ISL2018 = ProblemSet([
     Problem(
         problem_statement=r"Determine all functions $f : \mathbb{Q}^+\to\mathbb{Q}^+$ satisfying $$f(x^2f(y)^2)=f(x)^2f(y)$$ for all $x, y \in \mathbb{Q}^+$",
         source="ISL",
@@ -855,7 +855,7 @@ ISL2018_NO_G = ProblemSet([
 ])
 
 
-ISL2017_NO_G = ProblemSet([
+ISL2017 = ProblemSet([
     Problem(
         problem_statement=r"Let $a_1$, $a_2$, \dots , $a_n$, $k$, and $M$ be positive integers such that $$\frac{1}{a_1}+\frac{1}{a_2}+\cdots+\frac{1}{a_n}=k\qquad\text{and}\qquad a_1a_2\dots a_n=M.$$ If $M>1$, prove that the polynomial $$P(x)=M(x+1)^k-(x+a_1)(x+a_2)\cdots(x+a_n)$$ has no positive roots.",
         source="ISL",
@@ -1035,3 +1035,7 @@ ISL2017_NO_G = ProblemSet([
 ])
 
 
+
+
+
+ISL = ISL2017 + ISL2018 + ISL2019 + ISL2020 + ISL2021 + ISL2022

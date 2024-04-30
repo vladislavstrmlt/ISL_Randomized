@@ -7,7 +7,7 @@ ISL.to_pdf(
     include_unlabelled=False,
     sources=False,
     randomize_order=False,
-    remove_crap=True,
+    remove_auxfiles=True,
     output_filename="2017_2018",
     #num_problems=8,
 )

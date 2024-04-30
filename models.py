@@ -4,10 +4,7 @@ from dataclasses import dataclass
 from random import shuffle
 import subprocess
 import warnings
-import platform
-import shutil
 import os
-import streamlit as st
 
 @dataclass
 class Problem:
@@ -37,7 +34,7 @@ class ProblemSet:
         include_unlabelled: bool = False,
         sources: bool = False,
         randomize_order: bool = True,
-        remove_crap: bool = False,
+        remove_auxfiles: bool = False,
         output_filename: str = "main",
         num_problems: int | None = None,
     ):
@@ -86,7 +83,6 @@ class ProblemSet:
                 r"\pagestyle{fancy}"
                 r"\rhead{\today}"
                 rf"\lhead{{{title}}}"
-                #r"\cfoot{Page \thepage}"
 
                 r"\usepackage{amsmath}"
                 r"\usepackage{amsfonts}"
@@ -103,11 +99,10 @@ class ProblemSet:
                 r"\end{enumerate}"
                 r"\end{document}"
             )
-        st.write(os.listdir("output/"))
+
         subprocess.run(["pdflatex", "-output-directory=output/", "-interaction=nonstopmode", f"output/{output_filename}.tex"], check=True)
-        st.write(os.listdir("output/"))
-        if remove_crap:
+
+        if remove_auxfiles:
             for filename in os.listdir("output/"):
                 if not filename.endswith((".pdf", ".txt")):
                     os.remove(f"output/{filename}")
-

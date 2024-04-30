@@ -3,7 +3,8 @@ Streamlit app
 """
 import streamlit as st
 from problems import ISL2020_NO_G, ISL2017_NO_G, ISL2018_NO_G, ISL2019_NO_G
-import os
+
+
 PROBLEMS = ISL2018_NO_G
 
 
@@ -38,14 +39,13 @@ def main():
             include_unlabelled=False,
             sources=sources,
             randomize_order=randomize_order,
-            remove_crap=False,
+            remove_auxfiles=True,
             output_filename="streamlit_generated",
             num_problems=num_problems,
         )
         st.write("PDF generated successfully!")
+
         # Make a download link
-        st.write(os.listdir("."))
-        st.write(os.listdir("output"))
         with open("output/streamlit_generated.pdf", "rb") as f:
             pdf = f.read()
         st.download_button("Download PDF", pdf, "streamlit_generated.pdf")
@@ -53,15 +53,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    # import os
-    # import subprocess
-    # if st.button("echo"):
-    #     try:
-    #         subprocess.run(["sudo", "-S", "<<<", "", "apt-get", "install", "-y", "texlive"], check=True, capture_output=True)
-    #     except subprocess.CalledProcessError as e:
-    #         st.write(e.stderr)
-    # if st.button("sudo echo"):
-    #     try:
-    #         subprocess.run(["sudo", "echo", "hello", "-S", ""], check=True, capture_output=True)
-    #     except subprocess.CalledProcessError as e:
-    #         st.write(e.stderr)

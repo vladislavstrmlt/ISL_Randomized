@@ -104,7 +104,7 @@ class ProblemSet:
                 r"\end{document}"
             )
         st.write(os.listdir("output/"))
-        subprocess.run(["pdflatex", "-output-directory=output/", f"output/{output_filename}.tex"])
+        subprocess.run(["pdflatex", "-output-directory=output/", "-interaction=nonstopmode", f"output/{output_filename}.tex"], check=True)
         st.write(os.listdir("output/"))
         if remove_crap:
             for filename in os.listdir("output/"):

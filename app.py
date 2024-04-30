@@ -38,7 +38,7 @@ def main():
             include_unlabelled=False,
             sources=sources,
             randomize_order=randomize_order,
-            remove_crap=True,
+            remove_crap=False,
             output_filename="streamlit_generated",
             num_problems=num_problems,
         )

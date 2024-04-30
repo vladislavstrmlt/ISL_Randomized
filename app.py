@@ -3,7 +3,7 @@ Streamlit app
 """
 import streamlit as st
 from problems import ISL2020_NO_G, ISL2017_NO_G, ISL2018_NO_G, ISL2019_NO_G
-
+import os
 PROBLEMS = ISL2018_NO_G
 
 
@@ -44,6 +44,8 @@ def main():
         )
         st.write("PDF generated successfully!")
         # Make a download link
+        st.write(os.listdir("."))
+        st.write(os.listdir("output"))
         with open("output/streamlit_generated.pdf", "rb") as f:
             pdf = f.read()
         st.download_button("Download PDF", pdf, "streamlit_generated.pdf")

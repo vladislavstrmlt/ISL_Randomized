@@ -2,10 +2,7 @@
 Streamlit app
 """
 import streamlit as st
-from problems import ISL2020_NO_G, ISL2017_NO_G, ISL2018_NO_G, ISL2019_NO_G
-
-
-PROBLEMS = ISL2018_NO_G
+from problems import ISL
 
 
 def main():
@@ -31,16 +28,16 @@ def main():
     # include_unlabelled = st.checkbox("Include unlabelled problems")
     randomize_order = st.checkbox("Randomize order")
     sources = st.checkbox("Show sources")
-    num_problems = st.number_input("Number of problems", min_value=1, max_value=len(PROBLEMS), value=5)
+    num_problems = st.number_input("Number of problems", min_value=1, max_value=len(ISL), value=5)
 
     if st.button("Generate PDF"):
-        PROBLEMS.to_pdf(
+        ISL.to_pdf(
             topics=topics,
             include_unlabelled=False,
             sources=sources,
             randomize_order=randomize_order,
             remove_auxfiles=True,
-            output_filename="streamlit_generated",
+            output_filename='_'.join(topics),
             num_problems=num_problems,
         )
         st.write("PDF generated successfully!")

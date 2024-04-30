@@ -1,6 +1,5 @@
-from problems import ISL2022_NO_G, ISL2021_NO_G, ISL2020_NO_G, ISL2019_NO_G, ISL2017_NO_G, ISL2018_NO_G
+from problems import ISL
 
-ISL = ISL2018_NO_G + ISL2017_NO_G
 
 ISL.to_pdf(
     topics=("A", "C", "N"),

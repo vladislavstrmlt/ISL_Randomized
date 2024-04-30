@@ -26,7 +26,7 @@ def main():
 
 
     # include_unlabelled = st.checkbox("Include unlabelled problems")
-    randomize_order = st.checkbox("Randomize order")
+    # randomize_order = st.checkbox("Randomize order")
     sources = st.checkbox("Show sources")
     num_problems = st.number_input("Number of problems", min_value=1, max_value=len(ISL), value=5)
 
@@ -35,7 +35,7 @@ def main():
             topics=topics,
             include_unlabelled=False,
             sources=sources,
-            randomize_order=randomize_order,
+            randomize_order=True,
             remove_auxfiles=True,
             output_filename="streamlit_generated",
             num_problems=num_problems,

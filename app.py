@@ -37,7 +37,7 @@ def main():
             sources=sources,
             randomize_order=randomize_order,
             remove_auxfiles=True,
-            output_filename='_'.join(topics),
+            output_filename="streamlit_generated",
             num_problems=num_problems,
         )
         st.write("PDF generated successfully!")

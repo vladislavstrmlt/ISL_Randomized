@@ -37,6 +37,7 @@ class ProblemSet:
         remove_auxfiles: bool = False,
         output_filename: str = "main",
         num_problems: int | None = None,
+        max_difficulty: int | None = None,
     ):
         fullname_topics = {
             "A": "Algebra",
@@ -54,6 +55,13 @@ class ProblemSet:
             problem for problem in self.problems
             if problem.topic in topics or (include_unlabelled and problem.topic is None)
         ]
+
+        if max_difficulty is not None:
+            problems = [
+                problem for problem in problems
+                if problem.problem_number <= max_difficulty
+                and problem.source == "ISL"  # The problem number is only this way for ISL problems
+            ]
 
         if randomize_order:
             shuffle(problems)

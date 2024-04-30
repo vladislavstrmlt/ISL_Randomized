@@ -7,7 +7,7 @@ import warnings
 import platform
 import shutil
 import os
-
+import streamlit as st
 
 @dataclass
 class Problem:
@@ -103,9 +103,9 @@ class ProblemSet:
                 r"\end{enumerate}"
                 r"\end{document}"
             )
-
+        st.write(os.listdir("output/"))
         subprocess.run(["pdflatex", "-output-directory=output/", "-interaction=nonstopmode", f"output/{output_filename}.tex"])
-
+        st.write(os.listdir("output/"))
         if remove_crap:
             for filename in os.listdir("output/"):
                 if not filename.endswith((".pdf", ".txt")):
